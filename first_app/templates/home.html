@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{ list | join:" + " }}</h1>
+    <h1>{{ birthday|date:"D d M Y"}}</h1>
+    <h1>'django' | capfirst</h1>
+    <h1>'django' | upper</h1>
+    <h1>'KHAN' | lower</h1>
+    <h1>{{number | add:"[4,5,6]"}}</h1>
+    <h1>{{ list | cut:" + " }}</h1>
+    <h1>{{ list | random }}</h1>
+    <h1>{{ list | slice:":2" }}</h1>
+    {% comment %} <h1>{{ list | truncatechars:4</h1> {% endcomment %}
+    {% comment %} <h1>{{ list | wordcount</h1> {% endcomment %}
+    <h1>this is frist page</h1>
+</body>
+</html>
